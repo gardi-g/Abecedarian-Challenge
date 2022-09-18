@@ -25,3 +25,6 @@ The string will be no longer than 20 characters long.
 
 # Output Format
 Output, in alphabetical order, all non-empty, strictly abecedarian strings that can be made from the given alphabet.
+
+#Solution
+The question was solved by using recursion. We are iterating k, which indicates the next character of the input string. We have a base case where whenever the string length is not 0, then we append to the stringbuffer that is being printed. In the loop, we are appending i which we set equal to the kth character and incrementing it with each recursive call. The longest length that the input string could be is itself (since there can't be any duplicates). So we decrement the length of the string and continue iterating to print all of the possible abecedarian strings.
